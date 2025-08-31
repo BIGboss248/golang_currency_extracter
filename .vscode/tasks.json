@@ -1,0 +1,35 @@
+// Here you can define tasks which are snippets for teminal
+// you can define compile and run tasks or any other repeatable
+// terminal task to be run with a click
+// use intellisense to figureout configurations
+{
+  "tasks": [
+    {
+      "label": "Create Project Layout",
+      "type": "shell",
+      "windows": {
+        "command": [
+          "\n",
+          "mkdir docs, scripts, cmd, internal, pkg, test\n",
+          "ni .env.example -ItemType File -Force\n",
+          "ni Makefile -ItemType File -Force\n"
+        ]
+      },
+      "linux": {
+        "command": "mkdir -p {docs,scripts,cmd,internal,pkg,test} && touch README.md LICENSE .gitignore .env.example Makefile"
+      },
+      "osx": {
+        "command": "mkdir -p {docs,scripts,cmd,internal,pkg,test} && touch README.md LICENSE .gitignore .env.example Makefile"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "icon": {
+        "id": "root-folder-opened",
+        "color": "terminal.ansiGreen"
+      }
+    }
+  ]
+}
