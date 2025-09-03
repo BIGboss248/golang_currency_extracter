@@ -27,6 +27,7 @@ package main // main is for executable programs, for libaries use any other name
 
 // import packages
 import (
+	"fmt"
 	"os"
 	"time"
 
@@ -94,11 +95,13 @@ func SetupLogger(logFilePath string, logLevel zerolog.Level) (zerolog.Logger, er
 }
 
 /*
+# What it dose
+
 ScrapeDataXpath scrapes data from a webpage using the provided XPath and URL.
 It initializes a new Colly collector, listens for elements matching the XPath,
 and returns the first matched element or an error if the scraping fails.
 
-Parameters:
+# Parameters
 
 - logger: A zerolog.Logger instance for logging.
 
@@ -106,7 +109,7 @@ Parameters:
 
 - url: A string representing the URL of the webpage to scrape.
 
-Returns:
+# Returns
 
 - *colly.XMLElement: A pointer to the first matched XMLElement.
 
@@ -131,6 +134,28 @@ func ScrapeDataXpath(logger zerolog.Logger, xpath string, url string) (*colly.XM
 	return element, nil
 }
 
+/*
+# What it dose
+
+Gets a map in the form of map[string][]string{"URL","XPATH"} and extracts the price from the URL using the XPATH provided
+
+# Parameters
+
+- logger: A zerolog.Logger instance for logging.
+- currency_list: map in the form of map[string][]string{"URL","XPATH"}
+
+# Returns
+
+- map in the form of map[string]string{"currency":"price"}
+
+- error: An error if the scraping process encounters an issue.
+*/
+func extractPrice(logger zerolog.Logger, url string, xpath string) (map[string]string, error) {
+	//TODO implement this function
+	fmt.Println("TODO")
+	return nil, nil
+}
+
 // The function that will be executed
 func main() {
 	logger, err := SetupLogger("app.log", zerolog.InfoLevel)
@@ -143,10 +168,10 @@ func main() {
 		logger.Info().Str("FunctionName:", "main").TimeDiff("Duration (ms)", time.Now(), startTime).Msg("Main function ended.")
 	}()
 	// Create a new map with string key and list values and put "amon":["aa","ads"]
-	myMap := make(map[string][]string)
-	myMap["amon"] = []string{"aa", "ads"}
+	currencies := make(map[string][]string)
+	currencies["usdolor"] = []string{"https://www.tgju.org/profile/price_dollar_rl", "/html/body/main/div[1]/div[1]/div[1]/div/div[1]/div[3]/div[1]/span[2]"}
 
-	XMLElement, err := ScrapeDataXpath(logger, "/html/body/main/div[1]/div[1]/div[1]/div/div[1]/div[3]/div[1]/span[2]", "https://www.tgju.org/profile/price_dollar_rl")
+	XMLElement, err := ScrapeDataXpath(logger, currencies["usdolor"][1], currencies["usdolor"][0])
 
 	if err != nil {
 		logger.Error().Str("FunctionName:", "main").Err(err).Msg("Error in ScrapeDataXpath")

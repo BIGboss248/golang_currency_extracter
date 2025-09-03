@@ -1,0 +1,18 @@
+{"level":"info","FunctionName:":"main","caller":"D:/Scripts/golang_currency_extracter/main.go:142","time":"2025-09-03T19:35:36+03:30","message":"Main function started"}
+{"level":"info","FunctionName:":"ScrapeDataXpath","caller":"D:/Scripts/golang_currency_extracter/main.go:118","time":"2025-09-03T19:35:36+03:30","message":"Starting to scrape data"}
+{"level":"info","FunctionName:":"ScrapeDataXpath","caller":"D:/Scripts/golang_currency_extracter/main.go:131","time":"2025-09-03T19:35:36+03:30","message":"Finished scraping data"}
+{"level":"info","FunctionName:":"main","Extracted Element Text":"1,025,200","caller":"D:/Scripts/golang_currency_extracter/main.go:156","time":"2025-09-03T19:35:36+03:30","message":"Successfully extracted element text"}
+{"level":"info","FunctionName:":"main","Price":"1,025,200","caller":"D:/Scripts/golang_currency_extracter/main.go:158","time":"2025-09-03T19:35:36+03:30","message":"The extracted price is"}
+{"level":"info","FunctionName:":"main","Duration (ms)":304.5717,"caller":"D:/Scripts/golang_currency_extracter/main.go:144","time":"2025-09-03T19:35:36+03:30","message":"Main function ended."}
+{"level":"info","FunctionName:":"main","caller":"D:/Scripts/golang_currency_extracter/main.go:142","time":"2025-09-03T19:36:03+03:30","message":"Main function started"}
+{"level":"info","FunctionName:":"ScrapeDataXpath","caller":"D:/Scripts/golang_currency_extracter/main.go:118","time":"2025-09-03T19:36:03+03:30","message":"Starting to scrape data"}
+{"level":"info","FunctionName:":"ScrapeDataXpath","caller":"D:/Scripts/golang_currency_extracter/main.go:131","time":"2025-09-03T19:36:04+03:30","message":"Finished scraping data"}
+{"level":"info","FunctionName:":"main","Extracted Element Text":"1,025,200","caller":"D:/Scripts/golang_currency_extracter/main.go:155","time":"2025-09-03T19:36:04+03:30","message":"Successfully extracted element text"}
+{"level":"info","FunctionName:":"main","Price":"1,025,200","caller":"D:/Scripts/golang_currency_extracter/main.go:157","time":"2025-09-03T19:36:04+03:30","message":"The extracted price is"}
+{"level":"info","FunctionName:":"main","Duration (ms)":391.9853,"caller":"D:/Scripts/golang_currency_extracter/main.go:144","time":"2025-09-03T19:36:04+03:30","message":"Main function ended."}
+{"level":"info","FunctionName:":"main","caller":"D:/Scripts/golang_currency_extracter/main.go:141","time":"2025-09-03T19:41:52+03:30","message":"Main function started"}
+{"level":"info","FunctionName:":"ScrapeDataXpath","caller":"D:/Scripts/golang_currency_extracter/main.go:117","time":"2025-09-03T19:41:52+03:30","message":"Starting to scrape data"}
+{"level":"info","FunctionName:":"ScrapeDataXpath","caller":"D:/Scripts/golang_currency_extracter/main.go:130","time":"2025-09-03T19:41:53+03:30","message":"Finished scraping data"}
+{"level":"info","FunctionName:":"main","Extracted Element Text":"1,025,200","caller":"D:/Scripts/golang_currency_extracter/main.go:154","time":"2025-09-03T19:41:53+03:30","message":"Successfully extracted element text"}
+{"level":"info","FunctionName:":"main","Price":"1,025,200","caller":"D:/Scripts/golang_currency_extracter/main.go:156","time":"2025-09-03T19:41:53+03:30","message":"The extracted price is"}
+{"level":"info","FunctionName:":"main","Duration (ms)":538.9943,"caller":"D:/Scripts/golang_currency_extracter/main.go:143","time":"2025-09-03T19:41:53+03:30","message":"Main function ended."}
